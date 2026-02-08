@@ -1,12 +1,12 @@
 @{
-    ViewData["Title"] = "Welcome";
+    ViewData["Title"] = "Index";
 }
 
-<h2>Welcome</h2>
+<h2>HelloWorld Index</h2>
+
+<p>Welcome to the HelloWorld controller!</p>
 
 <ul>
-    @for (int i = 0; i < (int)ViewData["NumTimes"]!; i++)
-    {
-        <li>@ViewData["Message"]</li>
-    }
+    <li><a href="/HelloWorld/Welcome?name=Rick&numTimes=5">Welcome Rick (5 times)</a></li>
+    <li><a href="/HelloWorld/Welcome?name=John&numTimes=3">Welcome John (3 times)</a></li>
 </ul>
